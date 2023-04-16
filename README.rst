@@ -709,3 +709,33 @@ page rendering and painting.
 .. _`downgrade attack`: http://en.wikipedia.org/wiki/SSL_stripping
 .. _`OSI Model`: https://en.wikipedia.org/wiki/OSI_model
 .. _`Spanish`: https://github.com/gonzaleztroyano/what-happens-when-ES
+
+What Happens When You Type google.com In Your Browser And Press Enter
+
+When you type https://www.google.com in your browser and press Enter, a series of events occur behind the scenes that allow you to access the Google website. In this post, we will break down each step in the process and explain what happens.
+
+DNS Request
+The first step is the Domain Name System (DNS) request. Your computer needs to translate the human-readable URL, https://www.google.com, into an IP address that it can understand. It sends a request to a DNS server, which is a distributed network of servers that maintain a database of IP addresses and their corresponding domain names.
+
+TCP/IP
+Once the DNS server returns the IP address of the website, your computer uses the Transmission Control Protocol (TCP) to establish a connection with the server. TCP is a protocol that ensures reliable communication between devices over the internet. It establishes a virtual connection between your computer and the web server.
+
+Firewall
+Next, the firewall comes into play. A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predefined security rules. It ensures that only legitimate traffic is allowed to pass through and blocks any potentially harmful requests.
+
+HTTPS/SSL
+If the website uses HTTPS (Hypertext Transfer Protocol Secure), your browser initiates a secure connection with the web server using SSL (Secure Sockets Layer) or TLS (Transport Layer Security) protocol. This ensures that all data exchanged between your computer and the web server is encrypted and secure.
+
+Load-balancer
+The load-balancer acts as a mediator between the client and the server. It distributes incoming network traffic across multiple servers to ensure that no single server becomes overloaded with requests. This ensures that the website can handle a large number of requests without experiencing performance issues or downtime.
+
+Web Server
+The web server is responsible for handling HTTP requests from the client and returning the appropriate responses. It processes the request and sends back a response that contains the requested information, such as HTML, images, or videos.
+
+Application Server
+If the website uses server-side scripts or applications, the request is passed on to the application server. The application server executes the script or application and generates the dynamic content that is returned to the web server for transmission to the client.
+
+Database
+Finally, if the website requires data to be retrieved from a database, the application server sends a request to the database server. The database server retrieves the requested data and sends it back to the application server, which incorporates it into the response sent to the web server.
+
+In conclusion, typing https://www.google.com in your browser and pressing Enter triggers a complex series of events that involve several components working together seamlessly to deliver the requested web page. From the DNS request to the web server, each step in the process plays a crucial role in ensuring that you can access the website quickly and securely.
